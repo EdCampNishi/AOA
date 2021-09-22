@@ -6,3 +6,8 @@ exports.getUsers = () =>
     }).catch((error) => {
         console.log('Erro: ' + error);
     });
+
+exports.createUser = (user) =>
+
+    knex('users').insert(user);
+

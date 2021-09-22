@@ -8,9 +8,10 @@ router.get('/users', userController.getUsers);
 router.get('/user/:id', async function(req, res) {
 
 });
-router.post('/user/cadastro', async function(req, res) {
 
-});
+router.post('/user/cadastro', userController.createUser);
+
+
 router.put('/user/:id', async function(req, res) {
 
 });
